@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "networklayer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Anikardava97/NetworkLayer.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "38cfdfdc73e1e927caf2dc38851db264a56a9396"
+      }
+    }
+  ],
+  "version" : 2
+}
