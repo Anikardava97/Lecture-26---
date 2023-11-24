@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabController: UITabBarController {
+final class TabController: UITabBarController {
     
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {

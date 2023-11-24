@@ -15,7 +15,7 @@ protocol CatFactsListViewModelDelegate: AnyObject {
 
 final class CatFactsListViewModel {
     
-    let networkManager = NetworkManager()
+    private let networkManager = NetworkManager()
     
     weak var delegate: CatFactsListViewModelDelegate?
     
@@ -24,7 +24,7 @@ final class CatFactsListViewModel {
     }
     
     private func fetchFacts() {
-        networkManager.fetch(from: "https://catfact.ninja/facts") { [weak self] (result: Result<CatFactsResponse, NetworkError>) in
+        networkManager.fetch(from: catFactURL) { [weak self] (result: Result<CatFactsResponse, NetworkError>) in
             switch result {
             case .success(let fetchedFactsResponse):
                 self?.delegate?.factsFetched(fetchedFactsResponse.data)

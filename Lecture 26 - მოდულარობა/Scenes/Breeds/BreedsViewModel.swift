@@ -24,7 +24,7 @@ final class BreedsViewModel {
     }
     
     private func fetchFacts() {
-        networkManager.fetch(from: "https://catfact.ninja/breeds") { [weak self] (result: Result<CatBreedResponse, NetworkError>) in
+        networkManager.fetch(from: catBreedURL) { [weak self] (result: Result<CatBreedResponse, NetworkError>) in
             switch result {
             case .success(let fetchedBreedsResponse):
                 self?.delegate?.breedsFetched(fetchedBreedsResponse.data)

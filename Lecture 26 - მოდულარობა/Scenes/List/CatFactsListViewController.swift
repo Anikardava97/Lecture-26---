@@ -83,9 +83,7 @@ extension CatFactsListViewController: UITableViewDataSource {
 extension CatFactsListViewController: CatFactsListViewModelDelegate {
     func factsFetched(_ facts: [CatFacts]) {
         self.facts = facts
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        self.tableView.reloadData()
     }
     
     func showError(_ error: Error) {

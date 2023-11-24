@@ -6,12 +6,11 @@
 //
 
 import Foundation
-import NetworkLayer
 
-public struct CatFactsResponse: DecodableModel {
+public struct CatFactsResponse: Decodable {
     let data: [CatFacts]
 }
 
-public struct CatFacts: DecodableModel {
+public struct CatFacts: Decodable {
     let fact: String
 }

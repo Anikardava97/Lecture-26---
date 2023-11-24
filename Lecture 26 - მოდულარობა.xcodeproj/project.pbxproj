@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3710EC2B106EFF004499AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3710EB2B106EFF004499AC /* Constants.swift */; };
 		EE6492D92B0B4C1600EE14B3 /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = EE6492D82B0B4C1600EE14B3 /* NetworkLayer */; };
 		EE6492DB2B0B5EB300EE14B3 /* BreedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6492DA2B0B5EB300EE14B3 /* BreedsViewController.swift */; };
 		EE6492DE2B0B5ED700EE14B3 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6492DD2B0B5ED700EE14B3 /* TabController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE3710EB2B106EFF004499AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE6492DA2B0B5EB300EE14B3 /* BreedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewController.swift; sourceTree = "<group>"; };
 		EE6492DD2B0B5ED700EE14B3 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		EE6492E02B0B5F2400EE14B3 /* BreedsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsViewModel.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE3710ED2B106F04004499AC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EE3710EB2B106EFF004499AC /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		EE6492DC2B0B5EB700EE14B3 /* Breeds */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				EEFE6C3E2B0B143E00735EC9 /* App */,
+				EE3710ED2B106F04004499AC /* Constants */,
 				EEFE6C442B0B156D00735EC9 /* Models */,
 				EEFE6C502B0B161C00735EC9 /* Scenes */,
 				EEFE6C452B0B158500735EC9 /* Resources */,
@@ -249,6 +260,7 @@
 				EEFE6C2D2B0B13DB00735EC9 /* SceneDelegate.swift in Sources */,
 				EEFE6C4D2B0B15DB00735EC9 /* CatFactsTableViewCell.swift in Sources */,
 				EE6492E12B0B5F2400EE14B3 /* BreedsViewModel.swift in Sources */,
+				EE3710EC2B106EFF004499AC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

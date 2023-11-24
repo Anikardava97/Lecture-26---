@@ -83,9 +83,7 @@ extension BreedsViewController: UITableViewDataSource {
 extension BreedsViewController: BreedsViewModelDelegate {
     func breedsFetched(_ breeds: [CatBreeds]) {
         self.breeds = breeds
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
+        self.tableView.reloadData()
     }
     
     func showError(_ error: Error) {
